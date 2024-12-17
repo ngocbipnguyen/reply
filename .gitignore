@@ -1,0 +1,60 @@
+# Ignore Gradle files
+.gradle/
+build/
+
+# Ignore Gradle Wrapper binaries
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Ignore Android Studio project files
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea/workspace.xml
+
+# Ignore local properties
+local.properties
+
+# Ignore generated files
+captures/
+*.apk
+*.ap_
+*.aab
+
+# Ignore log files
+*.log
+
+# Ignore Mac OS generated files
+.DS_Store
+
+# Ignore Windows generated files
+Thumbs.db
+
+# Ignore coverage reports
+coverage/
+*.ec
+*.exec
+
+# Ignore lint results
+lint/reports/
+lint-results*.xml
+
+# Ignore dependency directories
+.cxx/
+.externalNativeBuild/
+/.gradle/
+
+# Ignore Node modules (if using React Native or Node)
+node_modules/
+
+# Ignore crashlytics and Firebase files
+crashlytics.properties
+
+# Ignore any key or secret files
+*.keystore
+*.jks
+
+# Ignore test-related files
+test-output/
+hs_err_pid*
