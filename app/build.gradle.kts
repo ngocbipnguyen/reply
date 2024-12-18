@@ -66,4 +66,17 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.hilt.android)
+    implementation(libs.hilt.compiler)
+    implementation(libs.hilt.navigation.compose)
+
+    implementation(libs.retrofit2.converter.moshi)
+    implementation(libs.retrofit2.adapter.rxjava2)
+    implementation(libs.retrofit2.retrofit)
+    implementation(libs.retrofit2.converter.gson)
+    implementation(libs.retrofit2.logging.interceptor)
+
+    implementation(libs.kotlinx.coroutines)
+    implementation(libs.lifecycle.viewmodel.ktx)
 }
