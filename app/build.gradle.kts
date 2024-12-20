@@ -79,4 +79,6 @@ dependencies {
 
     implementation(libs.kotlinx.coroutines)
     implementation(libs.lifecycle.viewmodel.ktx)
+
+    implementation(libs.androidx.compose.materialWindow)
 }

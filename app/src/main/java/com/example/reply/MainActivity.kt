@@ -11,6 +11,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.WindowSizeClass
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -20,13 +23,16 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ReplyTheme {
+            val windowSize = calculateWindowSizeClass(this)
+            ReplyTheme() {
                 Surface(tonalElevation = 5.dp) {
-                    Greeting("Android")
+                    ReplyApp()
                 }
             }
         }
@@ -41,6 +47,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
+@OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 @Preview(
     uiMode = UI_MODE_NIGHT_NO,
     name = "ReplyDark"
