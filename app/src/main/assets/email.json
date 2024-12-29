@@ -1,0 +1,12 @@
+[
+  {
+    "id" : 1,
+    "uid" : 0,
+    "firstName" : "Jeff",
+    "lastName" : "Hansen",
+    "email" : "hikingfan@gmail.com",
+    "altEmail" : "hkngfan@outside.com",
+    "avatar" : 1,
+    "isCurrentAccount" : true
+  }
+]

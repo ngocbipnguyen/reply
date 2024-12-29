@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -44,7 +47,7 @@ android {
     }
     packaging {
         resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "**/*"
         }
     }
 }
@@ -67,8 +70,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    ksp(libs.hilt.android.compiler)
     implementation(libs.hilt.android)
-    implementation(libs.hilt.compiler)
+    implementation(libs.hilt.android.compiler )
     implementation(libs.hilt.navigation.compose)
 
     implementation(libs.retrofit2.converter.moshi)
