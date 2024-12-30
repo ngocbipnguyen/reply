@@ -7,7 +7,7 @@ data class Account(
     val lastName: String,
     val email: String,
     val altEmail: String,
-    val avatar: String,
+    val avatar: Int,
     var isCurrentAccount: Boolean = false,
     var token: String = ""
 )

@@ -6,7 +6,7 @@ data class Email(
     val recipients: List<Account> = emptyList(),
     val subject: String,
     val body: String,
-//    val attachments: List<EmailAttachment> = emptyList(),
+    val attachments: List<EmailAttachment> = emptyList(),
     var isImportant: Boolean = false,
     var isStarred: Boolean = false,
     var mailbox: MailboxType = MailboxType.INBOX,
